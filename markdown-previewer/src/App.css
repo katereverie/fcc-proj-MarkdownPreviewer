@@ -1,0 +1,134 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(0, 0, 0);
+    --accent-color: rgb(255, 0, 0);
+    --text-background-color: rgb(255, 255, 255);
+    --header-background-color: rgb(248, 248, 255);
+  }
+  
+  /* general */
+  .App {
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border-style: none;
+  }
+  
+  .expand {
+    height: 100vh;
+  }
+    
+  .hidden {
+    display: none !important;
+  }
+  
+  /* headings */
+  h2 > span {
+    margin-left: 5px;
+  }
+  
+  #preview > h1,
+  #preview > h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+  }
+  #preview > h2 {
+    border-bottom: 1px solid black;
+  }
+  
+  /* wrappers */
+  .editor-wrapper,
+  .previewer-wrapper {
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 10px 2px var(--primary-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editor-wrapper {
+    min-width: 400px;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+  }
+  
+  .previewer-wrapper {
+    font-family: 'Noto Sans', 'Times New Roman', Times, serif;
+  }
+  
+  /* headers */
+  .header-wrapper {
+    background-color: var(--header-background-color);
+    border: 1px solid var(--secondary-color);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* editor/preview view */
+  #editor,
+  #preview {
+    background-color: var(--text-background-color);
+    max-width: 100%;
+    min-height: 200px;
+    padding: 10px;
+  }
+  
+  #editor {
+    font-family: 'Fira Code', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Times New Roman', sans-serif;
+    font-size: 0.8em;
+  }
+  
+  #preview {
+    font-weight: 400;
+    overflow: auto;
+  }
+  
+  /* markdown style adjustment */
+  blockquote {
+    color: rgb(117, 62, 62);
+    font-style: italic;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border-left: 4px solid rgb(137, 132, 132);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: fit-content;
+    margin-bottom: 1em;
+  }
+  table th,
+  table td {
+    border: 1px solid var(--secondary-color);
+    padding: 8px;
+  }
+  table th {
+    background-color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  /* footer */
+  footer {
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--primary-color);
+    background-color: var(--text-background-color);
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+  }
+  
+  footer #author {
+    font-family: Silkscreen, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+  }
