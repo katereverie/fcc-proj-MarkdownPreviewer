@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMaximize } from "@fortawesome/free-solid-svg-icons";
 import { faMinimize } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from "prop-types";
 
 const ExpandButton = ({ button }) => {
 
@@ -35,6 +36,10 @@ const ExpandButton = ({ button }) => {
         </button>
         
     );
+}
+
+ExpandButton.propTypes = {
+    button: PropTypes.string.isRequired
 }
 
 export default ExpandButton;
