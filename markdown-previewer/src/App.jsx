@@ -11,7 +11,7 @@ hljs.highlightAll();
 function App() {
 
   const defaultContent = [
-    "# Welcome to my Markdown Previewer!\n", 
+    "# Welcome to Markdown Previewer!\n", 
     "## Try it out!!\n",
     "### It is fun!!!\n",
     "Here's some inline code: `const isKittyHungry = true;`\n",
